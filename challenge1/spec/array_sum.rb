@@ -1,8 +1,12 @@
 def sum_array(array)
-    
     sum = 0
     array.each do |number|
-         sum += number
+       if number.class != Integer
+            sum = "Contains non numeric value"
+            return sum
+       else
+            sum += number
+       end
     end
      # p sum
      sum

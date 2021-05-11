@@ -24,7 +24,7 @@ describe "Program should sum all values" do
     end
 
     it "returning sum should be a number" do
-        expect(sum_array([10, a, -10, 5, 0]).class).not_to be Integer
+        expect(sum_array([10, 'a', -10, 5, 0]).class).not_to be Integer
     end
 end
 
